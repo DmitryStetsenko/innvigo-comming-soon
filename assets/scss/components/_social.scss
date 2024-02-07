@@ -11,6 +11,7 @@
   &__link {
     @include flex(flex-start, center);
     
+    text-decoration: none;
     color: $textBlue;
     img {
       width: 32px;

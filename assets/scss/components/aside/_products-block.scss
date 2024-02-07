@@ -17,14 +17,18 @@
   }
 
   &_p1 {
+    z-index: 3;
   }
   &_p2 {
     transform: translate(-10px, -40px);
+    z-index: 1;
   }
   &_p3 {
     transform: translateX(-20px);
+    z-index: 2;
   }
   &_p4 {
     transform: translate(60px, -15px);
+    z-index: 1;
   }
 }
