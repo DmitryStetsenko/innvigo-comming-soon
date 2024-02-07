@@ -1,5 +1,5 @@
 $(($) => {
-	countDownStart(new Date(2024, 3, 1), false, false);
+	countDownStart(new Date(2024, 3, 24), false, false);
 
 });
 
