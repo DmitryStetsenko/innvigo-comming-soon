@@ -344,4 +344,50 @@ img {
   border-radius: 50%;
   border: 20px solid white;
   overflow: hidden;
+}
+
+.products-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 30px;
+  left: 180px;
+}
+
+.product img {
+  width: 100%;
+}
+.product_thin {
+  width: 90px;
+}
+.product_thick {
+  width: 230px;
+}
+.product_p2 {
+  -webkit-transform: translate(-10px, -40px);
+      -ms-transform: translate(-10px, -40px);
+          transform: translate(-10px, -40px);
+}
+.product_p3 {
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+.product_p4 {
+  -webkit-transform: translate(60px, -15px);
+      -ms-transform: translate(60px, -15px);
+          transform: translate(60px, -15px);
 }/*# sourceMappingURL=style.css.map */

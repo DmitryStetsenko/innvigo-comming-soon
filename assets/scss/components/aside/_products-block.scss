@@ -1,0 +1,30 @@
+.products-block {
+  @include flex(flex-start, flex-end);
+  position: absolute;
+  bottom: 30px;
+  left: 180px;
+}
+.product {
+  img {
+    width: 100%;
+  }
+
+  &_thin {
+    width: 90px;
+  }
+  &_thick {
+    width: 230px;
+  }
+
+  &_p1 {
+  }
+  &_p2 {
+    transform: translate(-10px, -40px);
+  }
+  &_p3 {
+    transform: translateX(-20px);
+  }
+  &_p4 {
+    transform: translate(60px, -15px);
+  }
+}
