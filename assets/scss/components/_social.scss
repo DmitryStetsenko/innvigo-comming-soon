@@ -1,0 +1,23 @@
+.social {
+  @include flex(flex-start, center);
+
+  font-weight: 500;
+  margin-bottom: 75px;
+
+  &__info {
+    color: lighten($textColor, 40);
+    margin-right: 15px;
+  }
+  &__link {
+    @include flex(flex-start, center);
+    
+    color: $textBlue;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+    span {
+      margin-left: 3px;
+    }
+  }
+}

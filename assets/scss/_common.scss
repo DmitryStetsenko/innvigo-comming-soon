@@ -8,16 +8,23 @@ li {
   list-style: none;
 }
 
-html, body, .container {
+html, body, .main {
   height: 100%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $textColor;
+}
+
+img {
+  display: block;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1144px;
+  padding: 0 12px;
   margin: 0 auto;
 }

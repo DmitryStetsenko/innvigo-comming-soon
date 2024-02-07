@@ -1,24 +1,27 @@
 @import "./var";
 @import "./mixin";
-@import "./countdown";
+
 
 @import "./common";
 
 .main {
-  @include flex;
-  gap: 25px;  
-
+  padding-top: 25px;
   height: 100%;
 }
+
 .side {
   width: 50%;
   height: 100%;
-
-  &_left {
-    padding-left: 165px;
-  }
-  &_right {
-    padding-right: 130px;
-  }
+  position: absolute;
+  background: silver;
+  opacity: 0.7;
+  top: 0;
+  right: 0;
 }
 
+// components
+
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/countdown";
+@import "./components/social";

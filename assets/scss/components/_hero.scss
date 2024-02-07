@@ -1,0 +1,23 @@
+.hero {
+  margin-bottom: 50px;
+  max-width: 550px;
+
+  &__title-block {
+    margin-bottom: 25px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+  &__subtitle {
+    color: $textGreen;
+  }
+  &__content {
+    color: lighten($textColor, 40);
+    em {
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+}

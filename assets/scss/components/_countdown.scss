@@ -1,3 +1,18 @@
+.countdown-wrap {
+  background: rgba($textGreen, .05);
+  margin-bottom: 75px;
+}
+.countdown {
+  padding: 35px 0;
+  height: 190px;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__undextext {}
+}
+
+
 .countdownHolder{
 	@include flex;
 
