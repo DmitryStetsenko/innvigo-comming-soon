@@ -47,7 +47,7 @@ img {
 
 .logo {
   width: 260px;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 .logo img {
   width: 100%;
@@ -83,11 +83,52 @@ img {
 
 .countdown {
   padding: 35px 0;
-  height: 190px;
 }
 .countdown__title {
-  margin-bottom: 35px;
+  color: #7e8b98;
 }
+.countdown__undertext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 550px;
+  color: #7e8b98;
+  padding: 0 20px;
+  margin-top: -20px;
+}
+.countdown__undertext span:nth-child(1) {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+}
+.countdown__undertext span:nth-child(2) {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
+}
+.countdown__undertext span:nth-child(3) {
+  -webkit-transform: translateX(-15px);
+      -ms-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+.countdown__undertext span:nth-child(4) {
+  -webkit-transform: translateX(-30px);
+      -ms-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
 .countdownHolder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,11 +145,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: -3px;
+  -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .position {
@@ -116,7 +160,7 @@ img {
   height: 1.6em;
   overflow: hidden;
   position: relative;
-  width: 1.05em;
+  width: 0.65em;
 }
 
 .digit {
@@ -136,7 +180,7 @@ img {
       -ms-flex-direction: row;
           flex-direction: row;
   position: absolute;
-  width: 1em;
+  width: 0.65em;
   height: 100%;
   /* background-color:#444; */
   color: black;
@@ -178,16 +222,16 @@ img {
 
 .countDiv {
   display: block;
-  width: 16px;
+  width: 40px;
   position: relative;
 }
 
 .countDiv:before,
 .countDiv:after {
   position: absolute;
-  width: 5px;
-  height: 5px;
-  background-color: #444;
+  width: 10px;
+  height: 10px;
+  background-color: silver;
   border-radius: 50%;
   left: 50%;
   margin-left: -3px;
@@ -297,7 +341,7 @@ img {
 
 .main-ellipse {
   position: absolute;
-  bottom: 0;
+  top: -200px;
   left: 0;
   -webkit-transform: translateY(40%);
       -ms-transform: translateY(40%);
