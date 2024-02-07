@@ -1,0 +1,12 @@
+.copyright-block {
+  @include flex(space-between);
+  max-width: 550px;
+}
+.copyright {
+  color: lighten($textColor, 50);
+}
+.phone {
+  text-decoration: none;
+  color: $textColor;
+  font-weight: 500;
+}

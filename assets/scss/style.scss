@@ -6,16 +6,16 @@
 
 .main {
   padding-top: 25px;
+  padding-bottom: 40px;
   height: 100%;
 }
 
 .side {
   width: 50%;
   height: 100%;
+  min-height: 800px;
   position: absolute;
-  background: silver;
-  opacity: 0.7;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -25,3 +25,73 @@
 @import "./components/hero";
 @import "./components/countdown";
 @import "./components/social";
+@import "./components/copyright";
+
+.picture-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.main-ellipse {
+  $size: 1000px;
+  // $size: 72vw;
+  // max-width: 1000px;
+  // max-height: 1000px;
+  $borderWidth: 20px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(40%);
+  width: $size;
+  height: $size;
+
+  &__satellite {
+    border-radius: 50%;
+    border: $borderWidth solid white;
+    overflow: hidden;
+    position: absolute;
+
+    &_s1 {
+      $size: 270px;
+      width: $size;
+      height: $size;
+      top: 0;
+      left: 0;
+      transform: translate(50%, -30%);
+    }
+    &_s2 {
+      $size: 170px;
+      width: $size;
+      height: $size;
+      top: 0;
+      left: 0;
+      transform: translate(-20px, -100%);
+    }
+    &_s3 {
+      $size: 170px;
+      width: $size;
+      height: $size;
+      top: 0;
+      left: 50%;
+      transform: translate(-40%, -115%);
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: $borderWidth solid white;
+    overflow: hidden;
+  }
+}
