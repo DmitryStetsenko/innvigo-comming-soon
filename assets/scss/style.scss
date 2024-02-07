@@ -1,0 +1,24 @@
+@import "./var";
+@import "./mixin";
+@import "./countdown";
+
+@import "./common";
+
+.main {
+  @include flex;
+  gap: 25px;  
+
+  height: 100%;
+}
+.side {
+  width: 50%;
+  height: 100%;
+
+  &_left {
+    padding-left: 165px;
+  }
+  &_right {
+    padding-right: 130px;
+  }
+}
+
